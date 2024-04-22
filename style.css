@@ -1,0 +1,403 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(
+        250deg, #031c1b, #134544
+    );
+    height: 100%;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.menuDesktop{
+    margin-top: 60px;
+}
+
+.flex{
+    display: flex;
+    
+}
+
+.btnContato button{
+    margin-top: 40px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-image: linear-gradient(
+        180deg, #00fff4, #be94fa
+    );
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+button:hover{
+    box-shadow: 0px 0px 8px #00fff4;
+    transform: scale(1.05);
+}
+
+h4.titulo{
+    color:#fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h4.titulo span{
+    color:#00fff4
+}
+
+/* Cabeçalho */
+
+header{
+    width: 100%;
+    padding: 60px 4%;   
+    top: 0;
+    left: 0;
+    transition: .5s; 
+}
+
+
+header > .interface{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #00fff4;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Topo do site */
+
+section.topoSite{
+    padding: 50px 4%;
+}
+section.topoSite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topoSite h1{
+    color: #fff;
+    font-size: 37px;
+    line-height: 40px;
+}
+.topoSite .txtTopo h1 span{
+    color: #00fff4;
+}
+
+.topoSite .txtTopo p{
+    color: #fff;
+    margin: 40px 0;
+}
+.sobre .txtTopo span{
+    color:#00fff4;
+}
+.topoSite .imgTopo img{
+    border-radius: 10%;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top:30px;
+    }
+}
+
+/*sobre*/
+
+section.sobre{
+    margin-top: 300px;
+    padding: 150px 4%;
+}
+
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txtSobre{
+    color: #fff;
+    margin-bottom: 120px;
+}
+.sobre .txtSobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txtSobre h3 span{
+    color:#00fff4
+}
+
+.sobre .txtSobre p span{
+    color:#00fff4
+}
+.sobre .txtSobre h2 span{
+    color: #00fff4;
+    display: block;
+}
+
+.sobre .txtSobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btnSocial button{
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00fff4;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.sobre .imgSobre img{
+    border-radius: 15%;
+}
+
+.sobre .imgSobre img{
+    margin-bottom: 150px;
+}
+
+/* especialidades */
+
+section.experiencia{
+    margin-top: 50px;
+    padding: 40px 4%;
+}
+section.experiencia .flex{
+    gap: 60px;
+}
+.experiencia .experienciaBox{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+.experiencia .experienciaBox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff72;
+}
+
+.experiencia .experienciaBox h5{
+    color: #00fff4;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.experiencia .experienciaBox span{
+    color:#00fff4
+}
+
+
+
+
+section.educacao{
+    margin-top: 350px;
+    padding: 40px 4%;
+}
+section.educacao .flex{
+    gap: 60px;
+
+}
+.educacao .educacaoBox{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+.educacao .educacaoBox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff72;
+}
+
+.educacao .educacaoBox h5{
+    color: #00fff4;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.educacao .educacaoBox span{
+    color:#00fff4
+}
+
+
+section.skill{
+    margin-top: 50px;
+    padding: 40px 4%;
+}
+section.skill .flex{
+    gap: 60px;
+
+}
+.skill .skillBox{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: .4s;
+}
+.skill .skillBox:hover{
+    background-image: linear-gradient(
+        180deg, #00fff4, #6666ff
+    );
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #6666ff
+    
+}
+
+.skill .skillBox h5{
+    color: #00fff4;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.skill .skillBox span{
+    color:#00fff4
+}
+
+.skill .skillBox img{
+    margin-right: 60px;
+}
+
+/*rodape*/
+
+footer{
+    margin-top: 200px;
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .lineFooter p i{
+    color:#00fff4;
+    font-size: 22px;
+}
+
+footer .lineFooter p a{
+    color: #fff;
+}
+footer .lineFooter p {
+    color: #fff;
+}
+
+/* tela responsiva*/
+@media screen and (max-width: 1080px) {
+    /*GERAL*/
+    .flex{
+        flex-direction: column;
+    }
+
+    .sobre .flex{
+        flex-direction: column-reverse;
+    }
+    h4.titulo{
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    /* CABEÇALHO*/
+    .menuDesktop, .btnContato{
+        display: none;
+    }
+
+    /* topo do site*/
+
+    section.topoSite .flex{
+        gap: 40px;
+    }
+    
+    section.topoSite{
+        padding: 20px 8%;
+    }
+
+    .topoSite h1{
+        font-size: 30px;
+    }
+
+    .topoSite .imgTopo img{
+        width: 100%;
+    }
+
+    /*sobre*/
+    section.sobre{
+        padding: 40px 8%;
+    }
+    
+    .sobre .txtSobre h2{
+        font-size: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .sobre .imgSobre img{
+        width: 100%;
+    }
+
+    section.sobre .flex{
+        gap: 20px;
+    }
+
+    section.experiencia{
+        padding: 40px 8%;
+        gap: 10px;
+    }
+    .sobre .experienciaBox h5{
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .btnSocial{
+        text-align: center;
+    }
+
+    section.educacao{
+        padding: 40px 8%;
+        margin: 0 auto;
+    }
+    section.skill{
+        padding: 40px 8%;
+        gap: 10px;
+    }
+
+}
